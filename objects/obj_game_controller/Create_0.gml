@@ -1,0 +1,1 @@
+current_active_draggable = noone;
