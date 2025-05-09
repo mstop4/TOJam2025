@@ -2,8 +2,8 @@
 function ItemBase(_serial = "") constructor {
   type = "none";
   actual_serial = _serial;
+  display_serial = "";
 
-  
   function encrypt_plaintext(_plaintext, _shift) {
     if (_shift == 0) {
       return _plaintext;
@@ -36,7 +36,7 @@ function ItemBase(_serial = "") constructor {
 function Key(_encrypt_tag, _serial = "") : ItemBase(_serial) constructor {
   type = "key";
   // actual_serial
-  display_serial = "";
+  // display serial
   encryption_tag_serial = "";
   
   if (is_struct(_encrypt_tag)) {
@@ -56,6 +56,7 @@ function Key(_encrypt_tag, _serial = "") : ItemBase(_serial) constructor {
 function EncryptTag(_encrypt_shift, _serial = "", _plaintext = "") : ItemBase(_serial) constructor {
   type = "encryptTag";
   // actual_serial
+  display_serial = actual_serial;
   encrypt_shift = _encrypt_shift;
   plaintext_example = _plaintext;
   encrypted_exmaple = encrypt_plaintext(plaintext_example, _encrypt_shift);

@@ -42,6 +42,7 @@
     {"id":{"name":"room_game","path":"rooms/room_game/room_game.yy",},},
     {"id":{"name":"scr_key_menu","path":"scripts/scr_key_menu/scr_key_menu.yy",},},
     {"id":{"name":"scr_math","path":"scripts/scr_math/scr_math.yy",},},
+    {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},},
   ],
   "resourceType":"GMProject",
