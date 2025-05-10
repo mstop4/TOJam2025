@@ -1,4 +1,4 @@
-is_hovered = false;
+event_inherited();
 
 function draw_item() {
   draw_set_colour(c_white);
@@ -24,4 +24,20 @@ function draw_item() {
     y + click_zone_half_size,
     true
   );
+}
+
+function on_hover_enter() {
+  show_debug_message("Hover enter");
+}
+
+function on_hover_exit() {
+  show_debug_message("Hover exit");
+}
+
+function on_click() {
+  if (obj_game_controller.game_state == GAME_STATE.CHOOSE_KEY) {
+    obj_game_controller.game_state = GAME_STATE.VIEW_KEY;
+    instance_activate_object(obj_game_controller.popup_item);
+    obj_game_controller.popup_item.item = item;
+  }
 }
