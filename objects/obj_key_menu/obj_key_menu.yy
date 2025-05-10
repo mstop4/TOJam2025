@@ -9,8 +9,8 @@
   "name":"obj_key_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Key Menu",
+    "path":"folders/Objects/Key Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -4,10 +4,17 @@ function draw_item() {
   draw_set_colour(c_white);
   
   draw_sprite(spr_key, 0, x, y);
+  
+  if (item.type == "key" && item.encryption_tag_serial != "") {
+    draw_set_colour(c_aqua);
+  }
+  
   draw_text(x, y, item.display_serial);
   
   if (is_hovered) {
     draw_set_colour(c_lime);
+  } else {
+    draw_set_colour(c_white);
   }
   
   draw_rectangle(

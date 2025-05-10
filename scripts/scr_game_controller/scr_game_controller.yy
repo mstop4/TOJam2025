@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_key_menu",
+  "%Name":"scr_game_controller",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_key_menu",
+  "name":"scr_game_controller",
   "parent":{
-    "name":"Key Menu",
-    "path":"folders/Objects/Key Menu.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

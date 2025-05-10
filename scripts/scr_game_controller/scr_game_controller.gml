@@ -1,0 +1,4 @@
+enum GAME_STATE {
+  CHOOSE_KEY,
+  VIEW_KEY
+}
